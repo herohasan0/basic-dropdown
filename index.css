@@ -1,0 +1,50 @@
+details {
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 30%;
+}
+details summary {
+  user-select: none;
+  border: 20px solid #ecb390;
+  border-radius: 12px;
+  background-color: #ecb390;
+  color: #fff;
+  font-size: 48px;
+  max-width: 250px;
+  margin: auto;
+  cursor: pointer;
+  outline: none;
+}
+details summary p {
+  margin: 0;
+  left: 80%;
+  position: relative;
+  width: 10px;
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+details[open] > summary:before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  cursor: default;
+  content: '';
+}
+details .body {
+  z-index: 2;
+  position: relative;
+  width: 250px;
+  margin: auto;
+  color: #918878;
+  font-size: 25px;
+  text-align: center;
+}
+body {
+  background-color: #fcf8e8;
+}
